@@ -6,7 +6,7 @@
 /*   By: ynaamane <ynaamane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/17 12:38:59 by ynaamane          #+#    #+#             */
-/*   Updated: 2019/01/21 14:19:34 by ynaamane         ###   ########.fr       */
+/*   Updated: 2019/01/25 10:52:04 by ynaamane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@ int		ft_new_line(char **s, char **line, int fd, int ret)
 	int		len;
 
 	len = 0;
-	free(*line);
 	while (s[fd][len] != '\n' && s[fd][len] != '\0')
 		len++;
 	if (s[fd][len] == '\n')
